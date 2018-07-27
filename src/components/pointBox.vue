@@ -18,7 +18,7 @@ export default {
   mounted() {
     var _this = this;
 
-    for(let k = -100; k < 100; k = k + 0.1) {
+    for(let k = -10; k < 10; k = k + 0.1) {
       let x = (5 * Math.cos(2 * k)) + (2 * Math.cos(3 * k));
       let y = (2 * Math.sin(3 * k)) - (5 * Math.sin(2 * k));
 
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style module>
-  .box {width:100vh; height:100%; position:relative; margin:0 auto; transform-origin:center; transform:scale(10);}
+  .box {width:100%; height:100%; position:relative; margin:0 auto; transform-origin:center; transform:scale(10);}
   .box:before,
   .box:after {content:""; display:block; position:absolute; background-color:#000;}
   .box:before {width:100%; height:1px; top:50%; left:0;}
