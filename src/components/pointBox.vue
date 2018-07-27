@@ -18,7 +18,7 @@ export default {
   mounted() {
     var _this = this;
 
-    for(let k = -10; k < 10; k = k + 0.1) {
+    for(let k = -50; k < 50; k = k + 0.1) {
       let x = (5 * Math.cos(2 * k)) + (2 * Math.cos(3 * k));
       let y = (2 * Math.sin(3 * k)) - (5 * Math.sin(2 * k));
 
