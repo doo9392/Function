@@ -1,5 +1,5 @@
 <template>
-  <div :class=$style.box>
+  <div class="box">
     <point v-for="(l, i) in fun" :key="i" :point="l" />
   </div>
 </template>
@@ -30,7 +30,7 @@ export default {
 }
 </script>
 
-<style module>
+<style scoped>
   .box {width:100%; height:100%; position:relative; margin:0 auto; transform-origin:center; transform:scale(10);}
   .box:before,
   .box:after {content:""; display:block; position:absolute; background-color:#000;}
